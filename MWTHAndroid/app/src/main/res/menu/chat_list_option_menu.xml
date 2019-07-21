@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_pin"
+        android:title="Pin Chat"
+        android:icon="@drawable/ic_pin_white"
+        app:showAsAction="always"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/action_delete"
+        android:title="Delete Chat"
+        android:icon="@drawable/ic_delete_white"
+        app:showAsAction="always"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/action_mute"
+        android:title="Mute Notifications"
+        android:icon="@drawable/ic_volume_mute_white"
+        app:showAsAction="always"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/action_archive"
+        android:title="Archive Chat"
+        android:icon="@drawable/ic_archive_white"
+        app:showAsAction="always"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/action_add_shortcut"
+        android:title="Add Chat Shortcut"/>
+    <item
+        android:id="@+id/action_view_contact"
+        android:title="View Contact"/>
+    <item
+        android:id="@+id/action_mark_as_unread"
+        android:title="Mark As Unread"/>
+</menu>

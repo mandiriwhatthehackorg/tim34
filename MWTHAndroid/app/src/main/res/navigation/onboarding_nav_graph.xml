@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main_nav_graph.xml"
+            app:startDestination="@id/OnBoardingFragment">
+
+    <fragment android:id="@+id/KTPFragment" android:name="com.mandiri.whatthehack.onboarding.pages.KTPFragment"
+              android:label="fragment_ktp" tools:layout="@layout/fragment_ktp">
+        <action android:id="@+id/goToSelfie" app:destination="@id/selfieFragment"/>
+    </fragment>
+
+
+    <fragment android:id="@+id/OnBoardingFragment" android:name="com.mandiri.whatthehack.onboarding.pages.OnBoardingFragment"
+              android:label="fragment_onboarding" tools:layout="@layout/fragment_on_boarding">
+
+        <action android:id="@+id/goToSignUp"
+                app:destination="@id/signUpChoicesFragment"/>
+        <action android:id="@+id/goToLogin" app:destination="@id/loginFragment"/>
+    </fragment>
+
+    <fragment android:id="@+id/selfieFragment" android:name="com.mandiri.whatthehack.onboarding.pages.SelfieFragment"
+              android:label="SelfieFragment">
+        <action android:id="@+id/goToSignature" app:destination="@id/signatureFragment"/>
+    </fragment>
+    <fragment android:id="@+id/signatureFragment"
+              android:name="com.mandiri.whatthehack.onboarding.pages.SignatureFragment"
+              android:label="fragment_signature" tools:layout="@layout/fragment_signature">
+        <action android:id="@+id/goToKyc"
+                app:destination="@id/KYCTriggerFragment"/>
+    </fragment>
+    <fragment android:id="@+id/signUpChoicesFragment"
+              android:name="com.mandiri.whatthehack.onboarding.pages.SignUpChoicesFragment"
+              android:label="fragment_sign_up_choices" tools:layout="@layout/fragment_sign_up_choices">
+        <action android:id="@+id/goToCreateSession"
+                app:destination="@id/createSessionFragment"/>
+    </fragment>
+    <fragment android:id="@+id/createSessionFragment"
+              android:name="com.mandiri.whatthehack.onboarding.pages.CreateSessionFragment"
+              android:label="CreateSessionFragment">
+        <action android:id="@+id/goToOtp" app:destination="@id/OTPFragment"/>
+    </fragment>
+    <fragment android:id="@+id/inputDataFragment"
+              android:name="com.mandiri.whatthehack.onboarding.pages.InputDataFragment"
+              android:label="InputDataFragment">
+        <action android:id="@+id/goToKtp" app:destination="@id/KTPFragment"/>
+    </fragment>
+    <fragment android:id="@+id/OTPFragment" android:name="com.mandiri.whatthehack.onboarding.pages.OTPFragment"
+              android:label="OTPFragment">
+        <action android:id="@+id/goToInputData" app:destination="@id/inputDataFragment"/>
+    </fragment>
+    <fragment android:id="@+id/KYCTriggerFragment"
+              android:name="com.mandiri.whatthehack.onboarding.pages.KYCTriggerFragment"
+              android:label="KYCTriggerFragment">
+        <action android:id="@+id/goToShipment" app:destination="@id/shipmentFragment"/>
+    </fragment>
+    <fragment android:id="@+id/loginFragment" android:name="com.mandiri.whatthehack.onboarding.pages.LoginFragment"
+              android:label="fragment_login" tools:layout="@layout/fragment_login"/>
+    <fragment android:id="@+id/shipmentFragment"
+              android:name="com.mandiri.whatthehack.onboarding.pages.ShipmentFragment"
+              android:label="ShipmentFragment">
+        <action android:id="@+id/goToSuccessShipment"
+                app:destination="@id/successShipmentFragment"/>
+    </fragment>
+    <fragment android:id="@+id/successShipmentFragment"
+              android:name="com.mandiri.whatthehack.onboarding.pages.SuccessShipmentFragment"
+              android:label="SuccessShipmentFragment">
+        <action android:id="@+id/goToLogin" app:destination="@id/loginFragment"/>
+    </fragment>
+</navigation>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/bubbleLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/balloon_outgoing_normal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/messageTextView"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingRight="15dp"
+            android:paddingEnd="15dp"
+            android:autoLink="web"
+            android:text="Ra"
+            style="@style/chat_text_message_style"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_gravity="bottom|right"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:id="@+id/starredImageView"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/ic_starred_gray"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/timeTextView"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="11:15 PM"
+                style="@style/chat_timings"/>
+
+            <ImageView
+                android:id="@+id/statusImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:paddingBottom="3dp"
+                android:src="@drawable/message_got_read_receipt_from_target"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

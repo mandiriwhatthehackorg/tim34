@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.an.biometric:biometric-auth:0.1.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b3229e2fcd39fec046e347fcabcab6c7/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b3229e2fcd39fec046e347fcabcab6c7/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.an.biometric/biometric-auth/0.1.0/e2721a4f5eecc69140bbfc80978a4df7fcc813af/biometric-auth-0.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

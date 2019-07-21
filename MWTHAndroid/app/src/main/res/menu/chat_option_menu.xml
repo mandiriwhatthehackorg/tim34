@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_reply"
+        android:icon="@drawable/ic_reply_white"
+        android:title="Reply"
+        android:showAsAction="always"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_star"
+        android:icon="@drawable/ic_star_white"
+        android:title="Star"
+        android:showAsAction="always"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_info"
+        android:icon="@drawable/ic_info_white"
+        android:title="Info"
+        android:showAsAction="always"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_delete"
+        android:icon="@drawable/ic_delete_white"
+        android:title="Delete"
+        android:showAsAction="always"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_copy"
+        android:icon="@drawable/ic_content_copy_white"
+        android:title="Copy"
+        android:showAsAction="always"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_forward"
+        android:icon="@drawable/ic_forward_white"
+        android:title="Forward"
+        android:showAsAction="always"
+        app:showAsAction="always"/>
+
+</menu>

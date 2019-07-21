@@ -1,0 +1,186 @@
+{
+  "project_info": {
+    "project_number": "335776425824",
+    "firebase_url": "https://allpay-2017.firebaseio.com",
+    "project_id": "allpay-2017",
+    "storage_bucket": "allpay-2017.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335776425824:android:d0550640229f5340",
+        "android_client_info": {
+          "package_name": "com.paydonk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335776425824-9efg9hsqrgdde8n0f11bi848iadu8j0c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.paydonk",
+            "certificate_hash": "f6e4e9a5db5bffae90f6022a42f497a36cf537a4"
+          }
+        },
+        {
+          "client_id": "335776425824-3dcfhcd0sn4mldsrjh5on8339qgfk08e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ8yKA3wG9NNc4tjh7JPJj2TOdpoBWBbA"
+        },
+        {
+          "current_key": "AIzaSyAEiq0CZclEPoatjiUQiv-Bn-Oy8LKtQ8I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335776425824-3dcfhcd0sn4mldsrjh5on8339qgfk08e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335776425824:android:9c3e023b970bf29d",
+        "android_client_info": {
+          "package_name": "com.ridedonk.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335776425824-710lr7on7r3bckn1ecjs4n9skjqb81hf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ridedonk.app",
+            "certificate_hash": "1f393335a6b1e587d59a95ea80bd933cc165ccf1"
+          }
+        },
+        {
+          "client_id": "335776425824-3dcfhcd0sn4mldsrjh5on8339qgfk08e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ8yKA3wG9NNc4tjh7JPJj2TOdpoBWBbA"
+        },
+        {
+          "current_key": "AIzaSyAEiq0CZclEPoatjiUQiv-Bn-Oy8LKtQ8I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335776425824-3dcfhcd0sn4mldsrjh5on8339qgfk08e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335776425824:android:2bebd2c017436407",
+        "android_client_info": {
+          "package_name": "com.ridedonk.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335776425824-8berdnght7itsuacgopg5u9l2822o19e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ridedonk.user",
+            "certificate_hash": "9280432cd78f3aced1c9e79c3ab10cd4d2ea264f"
+          }
+        },
+        {
+          "client_id": "335776425824-3dcfhcd0sn4mldsrjh5on8339qgfk08e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ8yKA3wG9NNc4tjh7JPJj2TOdpoBWBbA"
+        },
+        {
+          "current_key": "AIzaSyAEiq0CZclEPoatjiUQiv-Bn-Oy8LKtQ8I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335776425824-3dcfhcd0sn4mldsrjh5on8339qgfk08e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335776425824:android:79fe7d78fadc042d",
+        "android_client_info": {
+          "package_name": "ridedonk.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335776425824-3dcfhcd0sn4mldsrjh5on8339qgfk08e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ8yKA3wG9NNc4tjh7JPJj2TOdpoBWBbA"
+        },
+        {
+          "current_key": "AIzaSyAEiq0CZclEPoatjiUQiv-Bn-Oy8LKtQ8I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

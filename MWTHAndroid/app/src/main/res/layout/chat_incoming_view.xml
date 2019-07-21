@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/bubbleLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="60dp"
+    android:layout_alignParentLeft="true"
+    android:background="@drawable/balloon_incoming_normal"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:autoLink="web"
+        android:text="Ra"
+        style="@style/chat_text_message_style"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp">
+
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="11:15 PM"
+            style="@style/chat_timings"
+            android:layout_marginRight="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_gravity="bottom|right"/>
+
+        <ImageView
+            android:id="@+id/starredImageView"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/ic_starred_gray"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/videoCall"
+        android:title="Video Call"
+        android:icon="@drawable/ic_video_call_white"
+        android:visible="true"
+        app:showAsAction="always"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/phoneCall"
+        android:title="Phone Call"
+        android:icon="@drawable/ic_phone_white"
+        android:visible="true"
+        app:showAsAction="always"
+        android:showAsAction="always"/>
+
+    <item
+        android:id="@+id/viewContact"
+        android:title="View Contact"/>
+    <item
+        android:id="@+id/media"
+        android:title="Media"/>
+    <item
+        android:id="@+id/search"
+        android:title="Search"/>
+
+    <item
+        android:id="@+id/muteNotifications"
+        android:title="Mute Notifications"/>
+    <item
+        android:id="@+id/wallpaper"
+        android:title="Wallpaper"/>
+    <item
+        android:id="@+id/block"
+        android:title="Block"/>
+    <item
+        android:id="@+id/clearChat"
+        android:title="Clear Chat"/>
+    <item
+        android:id="@+id/emailChat"
+        android:title="Email Chat"/>
+    <item
+        android:id="@+id/addShortcut"
+        android:title="Add Shortcut"/>
+
+</menu>

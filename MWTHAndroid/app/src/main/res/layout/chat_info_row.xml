@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/bubbleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/statusImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginEnd="3dp"
+                android:src="@drawable/message_got_read_receipt_from_target"/>
+
+
+            <TextView
+                android:id="@+id/statusTextView"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Read"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/timeTextView"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="11:15 PM"
+                style="@style/chat_timings"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

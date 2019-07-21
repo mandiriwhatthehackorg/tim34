@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <data>
+        <variable name="viewModel" type="com.mandiri.whatthehack.onboarding.pages.OnboardingViewModel"/>
+    </data>
+
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#080060CA">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp" android:layout_marginEnd="30dp"
+                            android:layout_marginStart="30dp"
+                            app:cardBackgroundColor="#ffffff" app:cardCornerRadius="22dp" android:layout_marginBottom="20dp"
+                            android:layout_marginTop="20dp"
+                            app:contentPadding="5dp">
+                        <RelativeLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" android:gravity="center"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="10dp">
+
+                            <!--<EditText-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--android:inputType="textPersonName"-->
+                                    <!--android:ems="10" android:hint="City"-->
+                                    <!--android:background="@null"-->
+                                    <!--android:text="@{viewModel.selectedBranchStr}"-->
+                            <!--/>-->
+
+                            <Spinner android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:id="@+id/branchSpinner"
+                            />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp" android:layout_marginEnd="30dp"
+                            android:layout_marginStart="30dp"
+                            app:cardBackgroundColor="#ffffff" app:cardCornerRadius="22dp" android:layout_marginBottom="20dp"
+                            android:layout_marginTop="20dp"
+                            app:contentPadding="5dp">
+                        <RelativeLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" android:gravity="center"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="10dp">
+
+                            <!--<EditText-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--android:inputType="textPersonName"-->
+                                    <!--android:ems="10" android:hint="Product"-->
+                                    <!--android:background="@null"-->
+                                    <!--android:text="@{viewModel.selectedProductStr}"-->
+                            <!--/>-->
+
+                            <Spinner android:id="@+id/productSpinner" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                             android:layout_marginEnd="30dp"
+                            android:layout_marginStart="30dp"
+                            app:cardBackgroundColor="#ffffff" app:cardCornerRadius="22dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="20dp"
+                            app:contentPadding="5dp">
+                        <RelativeLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" android:gravity="center"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="10dp">
+
+                            <!--<EditText-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--android:inputType="textPersonName"-->
+                                    <!--android:ems="10" android:hint="Card"-->
+                                    <!--android:text="@{viewModel.selectedCardStr}"-->
+                                    <!--android:background="@null"-->
+                            <!--/>-->
+
+                            <Spinner android:id="@+id/cardSpinner" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                             android:layout_marginEnd="30dp"
+                            android:layout_marginStart="30dp"
+                            app:cardBackgroundColor="#ffffff" app:cardCornerRadius="22dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="20dp"
+                            app:contentPadding="5dp">
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" android:gravity="center"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="10dp">
+
+                            <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:inputType="textPersonName"
+                                    android:ems="10" android:hint="Mother Name"
+                                    android:background="@null"
+                                    android:text="@={viewModel.motherName}"
+
+                            />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                             android:layout_marginEnd="30dp"
+                            android:layout_marginStart="30dp"
+                            app:cardBackgroundColor="#ffffff" app:cardCornerRadius="22dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="10dp"
+                            app:contentPadding="5dp">
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" android:gravity="center"
+                                android:paddingStart="10dp">
+
+                            <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:inputType="textPersonName"
+                                    android:ems="10" android:hint="PIN"
+                                    android:background="@null"
+
+                            />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                             android:layout_marginEnd="30dp"
+                            android:layout_marginStart="30dp"
+                            app:cardBackgroundColor="#ffffff" app:cardCornerRadius="22dp" android:layout_marginBottom="20dp"
+                            android:layout_marginTop="10dp"
+                            app:contentPadding="5dp">
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" android:gravity="center"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="10dp">
+
+                            <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:inputType="textPersonName"
+                                    android:ems="10" android:hint="Confirmation PIN"
+                                    android:background="@null"
+
+                            />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                             android:layout_marginEnd="30dp"
+                            android:layout_marginStart="30dp"
+                            app:cardBackgroundColor="#ffffff" app:cardCornerRadius="22dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="10dp"
+                            app:contentPadding="5dp">
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" android:gravity="center"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="10dp">
+
+                            <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:inputType="textPersonName"
+                                    android:ems="10" android:hint="Password"
+                                    android:background="@null"
+
+                            />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                             android:layout_marginEnd="30dp"
+                            android:layout_marginStart="30dp"
+                            app:cardBackgroundColor="#ffffff" app:cardCornerRadius="22dp" android:layout_marginBottom="20dp"
+                            android:layout_marginTop="10dp"
+                            app:contentPadding="5dp">
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" android:gravity="center"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="10dp">
+
+                            <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:inputType="textPersonName"
+                                    android:ems="10" android:hint="Confirmation Password"
+                                    android:background="@null"
+
+                            />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Terms and Condition" android:textSize="12sp"
+                              android:layout_margin="10dp"
+                              android:layout_gravity="center"/>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                             android:layout_marginEnd="30dp"
+                            android:layout_marginStart="30dp"
+                            app:cardBackgroundColor="#003D79" android:layout_marginBottom="20dp" app:cardCornerRadius="22dp"
+                            android:id="@+id/submitButton">
+
+                        <TextView
+                                android:text="OK"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center" android:textColor="#ffffff" android:textSize="16sp"/>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</layout>

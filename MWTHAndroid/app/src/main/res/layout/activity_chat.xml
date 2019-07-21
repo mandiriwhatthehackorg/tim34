@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mandiri.whatthehack.audiovideo.chat.ChatActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/MyToolbarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/userImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profile"
+                android:layout_toRightOf="@+id/backButton"
+                android:layout_toEndOf="@+id/backButton"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginStart="-5dp"
+                android:layout_centerVertical="true"/>
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_white"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="8dp"
+                android:layout_centerVertical="true" />
+
+            <RelativeLayout
+                android:id="@+id/userNameLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@id/userImageView"
+                android:layout_toRightOf="@id/userImageView"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless">
+                <TextView
+                    android:id="@+id/userTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="19sp"
+                    />
+                <TextView
+                    android:layout_below="@id/userTextView"
+                    android:id="@+id/userStatusTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/bottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:background="@drawable/input">
+
+                <RelativeLayout
+                    android:id="@+id/replyLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f1f1f1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/replySenderTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="You"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+                    <TextView
+                        android:id="@+id/replyTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="gdsnjkgsfjkfgs sjknfg sfgjnksf gfjnk"
+                        android:layout_below="@id/replySenderTextView"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+                    <ImageButton
+                        android:id="@+id/replyCloseButton"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:src="@drawable/ic_close_gray"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="4dp"/>
+
+                    <LinearLayout
+                        android:layout_width="3dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignBottom="@id/replyTextView"
+                        android:background="@android:color/holo_red_dark"
+                        android:layout_marginBottom="-5dp"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:minHeight="50dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="10dp">
+                    <ImageButton
+                        android:id="@+id/emojiButton"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="bottom"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/input_emoji"/>
+
+                    <EditText
+                        android:id="@+id/inputEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="12dp"
+                        android:hint="Type a message"
+                        android:singleLine="false"
+                        android:inputType="textMultiLine"
+                        android:textSize="18sp"
+                        android:maxHeight="200dp"
+                        android:textColorHint="#c4c0bd"
+                        android:background="@null"/>
+
+                    <ImageButton
+                        android:id="@+id/attachmentButton"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="bottom"
+                        android:src="@drawable/ic_attachment_gray"
+                        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+                    <ImageButton
+                        android:id="@+id/cameraButton"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="bottom"
+                        android:src="@drawable/ic_camera_gray"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/sendButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/input_circle_normal"
+                android:src="@drawable/ic_mic_white"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomLayout"
+            android:padding="5dp"/>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/chat_send_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:enabled="false"
+                android:scaleType="centerInside" />
+
+            <com.mandiri.whatthehack.audiovideo.other.FrameLayoutFixed
+                android:id="@+id/record_panel"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="2dp"
+                android:background="#ffffff"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:id="@+id/slideText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/slidearrow" />
+
+                    <TextView
+                        android:id="@+id/slideToCancelTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        android:textColor="#999999"
+                        android:textSize="12dp"
+                        android:text="Slide to cancel"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="#ffffffff"
+                    android:orientation="horizontal"
+                    android:paddingLeft="13dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/rec" />
+
+                    <TextView
+                        android:id="@+id/recording_time_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        android:text="00:00"
+                        android:textColor="#4d4c4b"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </com.mandiri.whatthehack.audiovideo.other.FrameLayoutFixed>
+
+            <ImageButton
+                android:id="@+id/chat_audio_send_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/white"
+                android:enabled="false"
+                android:paddingRight="4dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/mic_button_states"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
